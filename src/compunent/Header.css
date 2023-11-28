@@ -1,0 +1,28 @@
+
+.h-main{
+    background-color: rgb(193, 190, 190);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main button{
+    margin-top: 100px;
+    background-color: orange;
+    border: none;
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
