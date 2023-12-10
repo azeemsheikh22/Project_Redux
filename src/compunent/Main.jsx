@@ -3,6 +3,7 @@ import { addtocart, clearcart, removecart } from "../redux/action";
 import { useDispatch } from "react-redux";
 import './Header.css'
 import { productlist } from "../redux/productAction";
+import { useEffect } from "react";
 
 function Main() {
   const dispatch = useDispatch();
@@ -12,12 +13,16 @@ function Main() {
     colour: "red"
   }
 
+  useEffect(() =>{
+    dispatch(productlist())
+  },[])
+
   return (
     <div className="Main">
-      <button onClick={() => dispatch(addtocart(product))}>Add to cart</button>
-      <button onClick={() => dispatch(removecart(product.name))}>Remove cart</button>
+      {/* <button onClick={() => dispatch(addtocart(product))}>Add to cart</button> */}
+      {/* <button onClick={() => dispatch(removecart(product.name))}>Remove cart</button> */}
       <button onClick={() => dispatch(clearcart())}>Clear cart</button>
-      <button onClick={() => dispatch(productlist())}>product list</button>
+      {/* <button onClick={() => dispatch(productlist())}>product list</button> */}
 
     </div>
   );

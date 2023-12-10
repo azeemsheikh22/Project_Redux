@@ -14,9 +14,9 @@ export const cartdata = (data = [], action) => {
 
       return [action.data, ...data];
     case Remove_Cart:
-      console.warn("reducer", action);
-      data.length = data.length-1
-      return [...data];
+      console.warn("reducerremove", action);
+      const remaningitem = data.filter((item) => item._id !== action.data);
+      return [...remaningitem];
     default:
       return data;
   }

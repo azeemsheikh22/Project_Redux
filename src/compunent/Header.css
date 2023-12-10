@@ -1,14 +1,14 @@
 
 .h-main{
-    background-color: rgb(193, 190, 190);
+    /* background-color: rgb(193, 190, 190); */
     width: 100%;
-    height: 80px;
+    /* height: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
-.Main{
+/* .Main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,4 +25,4 @@
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
-}
+} */
